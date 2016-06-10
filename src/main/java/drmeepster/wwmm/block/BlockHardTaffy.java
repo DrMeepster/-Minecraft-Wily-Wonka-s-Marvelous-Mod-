@@ -1,4 +1,4 @@
-package com.drmeepster.wwmm.block;
+package drmeepster.wwmm.block;
 
 import java.util.Random;
 
@@ -13,9 +13,9 @@ import net.minecraft.item.Item;
  * @author DrMeepster
  *
  */
-public class HardTaffy extends Block
+public class BlockHardTaffy extends Block
 {
-    public HardTaffy()
+    public BlockHardTaffy()
     {
         super(Material.rock);
         this.setCreativeTab(CreativeTabs.tabBlock);
