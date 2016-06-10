@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "modid": "WWMM",
+  "name": "Wily Wonka's Marvelous Mod",
+  "description": "A mod based around objects from Charlie and the Chocolate Factory.",
+  "version": "0.0.1.0",
+  "mcversion": "1.8.9",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["DrMeepster"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
