@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class WWMM_Main{
 	
     public static final String MODID = "WWMM";
-    public static final String VERSION = "Alpha Build 1";
+    public static final String VERSION = "0.0.1.1";
     public static Block HardTaffy = new BlockHardTaffy();
     
     @EventHandler
