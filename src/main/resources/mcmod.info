@@ -1,9 +1,9 @@
 [
 {
-  "modid": "WWMM",
+  "modid": "wwmm",
   "name": "Wily Wonka's Marvelous Mod",
   "description": "A mod based around objects from Charlie and the Chocolate Factory.",
-  "version": "0.0.1.0",
+  "version": "0.0.1.1",
   "mcversion": "1.8.9",
   "url": "",
   "updateUrl": "",

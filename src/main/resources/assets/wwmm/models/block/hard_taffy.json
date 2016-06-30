@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "wwmm:blocks/hard_taffy"
+	}
+}
