@@ -1,0 +1,10 @@
+{
+    "parent": "wwmm:block/sugar_grass",
+    "textures": {
+        "particle": "wwmm:blocks/cocoa_grounds",
+        "bottom": "wwmm:blocks/cocoa_grounds",
+        "top": "wwmm:blocks/sugar_grass_top",
+        "side": "wwmm:blocks/sugar_grass_side",
+        "overlay": "wwmm:blocks/sugar_grass_side_overlay"
+    }
+}
