@@ -1,5 +1,6 @@
 {
 	"variants": {
-		"normal": { "model": "wwmm:hard_taffy" }
+		"normal": { "model": "wwmm:hard_taffy" },
+		"inventory": { "model": "wwmm:items/hard_taffy"}
 	}
 }

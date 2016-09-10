@@ -1,5 +1,5 @@
 {
-    "parent": "wwmm:block/sugar_grass",
+    "parent": "block/grass",
     "textures": {
         "particle": "wwmm:blocks/cocoa_grounds",
         "bottom": "wwmm:blocks/cocoa_grounds",
