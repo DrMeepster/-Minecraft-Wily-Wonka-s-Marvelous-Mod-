@@ -5,12 +5,13 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import drmeepster.wwmm.Main;
-import drmeepster.wwmm.utill.WonkaBlockList;
+import drmeepster.wwmm.utill.WonkaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.block.BlockTallGrass;
 import net.minecraft.block.IGrowable;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
@@ -47,6 +48,7 @@ public class BlockSugarGrass extends Block implements IGrowable{
         
         GameRegistry.register(itemForm);
         GameRegistry.register(this);
+        this.setSoundType(SoundType.PLANT);
         this.setUnlocalizedName(NAME);
         this.setDefaultState(this.blockState.getBaseState().withProperty(SNOWY, Boolean.valueOf(false)));
         this.setTickRandomly(true);
@@ -68,7 +70,7 @@ public class BlockSugarGrass extends Block implements IGrowable{
         {
             if (worldIn.getLightFromNeighbors(pos.up()) < 4 && worldIn.getBlockState(pos.up()).getLightOpacity(worldIn, pos.up()) > 2)
             {
-                worldIn.setBlockState(pos, WonkaBlockList.groundCocoa.getDefaultState());
+                worldIn.setBlockState(pos, WonkaBlocks.groundCocoa.getDefaultState());
             }
             else
             {
@@ -86,7 +88,7 @@ public class BlockSugarGrass extends Block implements IGrowable{
                         IBlockState iblockstate = worldIn.getBlockState(blockpos.up());
                         IBlockState iblockstate1 = worldIn.getBlockState(blockpos);
 
-                        if (iblockstate1.getBlock() == WonkaBlockList.groundCocoa && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
+                        if (iblockstate1.getBlock() == WonkaBlocks.groundCocoa && worldIn.getLightFromNeighbors(blockpos.up()) >= 4 && iblockstate.getLightOpacity(worldIn, pos.up()) <= 2)
                         {
                             worldIn.setBlockState(blockpos, this.getDefaultState());
                         }
@@ -102,7 +104,7 @@ public class BlockSugarGrass extends Block implements IGrowable{
     @Nullable
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return WonkaBlockList.groundCocoa.getItemDropped(WonkaBlockList.groundCocoa.getDefaultState(), rand, fortune);
+        return WonkaBlocks.groundCocoa.getItemDropped(WonkaBlocks.groundCocoa.getDefaultState(), rand, fortune);
     }
 
     /**

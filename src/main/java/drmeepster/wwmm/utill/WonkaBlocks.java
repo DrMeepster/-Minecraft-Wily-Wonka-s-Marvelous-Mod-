@@ -4,7 +4,7 @@ import drmeepster.wwmm.Main;
 import drmeepster.wwmm.block.*;
 import net.minecraft.block.Block;
 
-public class WonkaBlockList {
+public class WonkaBlocks {
 	public static BlockHardTaffy hardTaffy;
 	public static BlockGroundCocoa groundCocoa;
 	public static BlockSugarGrass sugarGrass;

@@ -3,8 +3,9 @@ package drmeepster.wwmm.block;
 import java.util.Random;
 
 import drmeepster.wwmm.Main;
-import drmeepster.wwmm.utill.WonkaBlockList;
+import drmeepster.wwmm.utill.WonkaBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -28,6 +29,7 @@ public class BlockHarderTaffy extends Block {
         
         GameRegistry.register(itemForm);
         GameRegistry.register(this);
+        this.setSoundType(SoundType.STONE);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         this.setUnlocalizedName(NAME);
     }

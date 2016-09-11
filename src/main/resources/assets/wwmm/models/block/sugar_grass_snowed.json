@@ -3,7 +3,7 @@
     "textures": {
         "particle": "wwmm:blocks/cocoa_grounds",
         "bottom": "wwmm:blocks/cocoa_grounds",
-        "top": "blocks/grass_top",
-        "side": "blocks/grass_side_snowed"
+        "top": "wwmm:blocks/sugar_grass_top",
+        "side": "wwmm:blocks/sugar_grass_side_snowed"
     }
 }

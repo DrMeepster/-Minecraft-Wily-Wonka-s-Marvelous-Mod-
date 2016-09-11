@@ -5,7 +5,7 @@ import drmeepster.wwmm.block.BlockHardTaffy;
 import drmeepster.wwmm.block.BlockHarderTaffy;
 import drmeepster.wwmm.block.BlockSugarGrass;
 import drmeepster.wwmm.proxy.ClientProxy;
-import drmeepster.wwmm.utill.WonkaBlockList;
+import drmeepster.wwmm.utill.WonkaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
@@ -35,13 +35,13 @@ public class Main{
     @EventHandler
     public void PreInit(FMLPreInitializationEvent event){
     	//Blocks
-     	WonkaBlockList.Init();
+     	WonkaBlocks.Init();
      	//Items/ItemBlocks
      	ClientProxy.registerItemModels();
     }
     @EventHandler
     public void Init(FMLInitializationEvent event){
-    	
+     	ClientProxy.regColours();
     }
     
     @EventHandler

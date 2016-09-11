@@ -5,6 +5,7 @@ import java.util.Random;
 import drmeepster.wwmm.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyEnum;
@@ -30,6 +31,7 @@ public class BlockGroundCocoa extends Block {
         
         GameRegistry.register(itemForm);
         GameRegistry.register(this);
+        this.setSoundType(SoundType.GROUND);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         this.setUnlocalizedName(NAME);
     }
