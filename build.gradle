@@ -22,7 +22,7 @@ plugins {
 */
 version = "mc1.9.4-v0.1.0.0"
 group= "drmeepster.wwmm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "WWMM"
+archivesBaseName = "wwmm"
 
 minecraft {
     version = "1.9.4-12.17.0.2051"
